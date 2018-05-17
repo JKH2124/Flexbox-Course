@@ -2,13 +2,81 @@
 <html lang='en'>
 
 <head>
-    <meta charset='UTF-8'>
-    <title></title>
+  <meta charset='UTF-8'>
+  <title>Flexbox Capstone Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style>
+
+      body {
+          margin: 0px;
+          padding: 0px;
+      }
+      
+      .main-container {
+          display: flex;
+          justify-content: space-between;
+          background-color:rgb(19, 180, 230);
+          border: 1.5px solid  rgb(189, 197, 202);
+          height: 50px;
+          width: 100%;
+          font-size: 1.5em;
+      }
+
+      .dropdown {
+          color: white;
+          text-decoration: none;
+          padding: 25px;
+          display: flex;
+          align-items: center;
+      }
+
+      .right-pull {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+      }
+
+      .right-tags {
+          color: white;
+          text-decoration: none;
+          padding: 20px;
+
+      }
+
+      .left-pull {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+      }
+
+      .left-tags {
+          color: white;
+          text-decoration: none;
+          padding: 20px;
+      }
+
+      a:hover {
+          color: rgb(189, 197, 202);
+          cursor: pointer;
+      } 
+  </style>
 </head>
 
 <body>
-    <h1>'Hi Flexbox'</h1>
-    <h2>'Up and running y'all!</h2>
+    <div class="main-container">
+        <div class="left-pull">
+            <a href="javascript:void(0);" class="dropdown" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+            <a href="#home" class="left-tags">Home</a>
+            <a href="#news" class="left-tags">News</a>
+            <a href="#contact" class="left-tags">Contact</a>
+        </div>
+        <div class="right-pull">   
+            <a href="#about" class="right-tags">About</a>
+            <a href="#about"class="right-tags">About</a>
+            <a href="#about" class="right-tags">About</a>
+        </div>     
+    </div>   
 </body>
-
-</html>
+</html>  
